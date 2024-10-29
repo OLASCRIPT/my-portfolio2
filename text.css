@@ -1,0 +1,164 @@
+*{
+    box-sizing:content-box;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+}
+body{
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(rgba(0, 440, 350, 0.4), rgba(0, 350, 300, 0.4)), url("./assets/scrip.png") no-repeat ;
+    background-size: cover;
+    box-shadow: -4px -4px 3px hsl(49, 37%, 42%);
+}
+
+
+.wrap{
+    max-width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+.heading nav li{
+    display: inline;
+    
+}
+
+.heading nav li a{
+     margin: 10px;
+     text-decoration: none;
+     color:lightcoral;
+}
+
+nav li :hover{
+    color: aquamarine;
+    font-size:0.75;
+}
+.hero{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10rem;
+
+    
+}
+
+
+
+
+.action{
+
+    animation-name: color;
+    animation-duration: 4s;
+    animation-timing-function:ease-in;
+    animation-iteration-count:infinite;
+    color:lightgreen;
+    /* padding-bottom: 30px; */
+    font-size: 2.5rem;
+    /* font-weight: bold; */
+}
+
+
+@keyframes color{
+    0%{
+        color:green;
+    }
+
+    50%{
+        color: yellow;
+    }
+    80%{
+     color: red;
+}
+
+100%{
+    color: hotpink;
+}
+
+}
+
+p{
+    font-size: 20px;
+    color: white;
+
+}
+
+button{
+    width: 10rem;
+    padding: 0.62rem;
+    font-size: 0.8rem;
+    font-weight: 16px;
+    color: rgb(251, 255, 127);
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+ @media screen and (max-width:510px){
+    
+
+
+    body{
+        /* background-color: blueviolet; */
+        margin: 0;
+        padding: 0;
+    }
+
+ .wrap{
+    /* background-color: aquamarine; */
+    width: 100%;
+
+    }
+
+    .heading nav li a{
+        display:block;
+        color: hotpink;
+
+        
+    }
+
+.hero-pic{
+content: url("./assets/elite\ 2.jfif");
+width: 400px;
+height: 400px;
+/* margin-left: 30px; */
+
+}
+
+.hero{
+    display: flex;
+    flex-wrap:wrap-reverse;
+    justify-content: center;
+    /* margin-bottom: 70px;
+     */
+
+}
+
+.herotext{
+text-align: center;
+padding: 15px;
+
+}
+
+
+h1{
+    font-size: 20px;
+}
+
+button{
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+
+
+} 
